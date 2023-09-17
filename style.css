@@ -44,7 +44,7 @@ body {
 
 .back:before {
     display: inline-block;
-    content:url(img/keyboard_backspace.svg);
+    content:url('img/keyboard_backspace.svg');
     width: 24px;
     height:24px;
     vertical-align: middle;
