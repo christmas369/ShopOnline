@@ -1,10 +1,26 @@
+@font-face {
+    font-family: lato;
+    src: local("Lato Regular"), local("Lato-Regular"), url("fonts/lato-regular.woff2") format("woff2"),
+    url("fonts/lato-regular.woff") format("woff");
+    font-weight: 00;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: lato;
+    src: local("Lato Bold"), local("Lato-Bold"), url("fonts/lato-bold.woff2") format("woff2"),
+    url("fonts/lato-bold.woff") format("woff");
+    font-weight: 700;
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     color: #2D2D2D;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,'Fira Sans', 'Droid sans', Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Lato;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -13,7 +29,7 @@ body {
 
 .wrapper {
     max-width: 1770px;
-    padding: 80px 75px;
+    padding: 80px 30px;
     margin: 0 auto;
 }
 
@@ -28,12 +44,13 @@ body {
     margin: 0 0 30px;
 }
 
-.text:last-of-type {
-    margin-bottom: 150px;
+.text:last-child {
+    margin: 0;
 }
 
 .block {
     vertical-align: middle;
+    padding-top: 120px;
 }
 
 .back {
@@ -41,15 +58,17 @@ body {
     display: inline-block;
     font-size: 16px;
     font-weight: 700;
+    color:#2D2D2D;
+    text-decoration: none;
 }
 
 .back:before {
     display: inline-block;
-    content:url('img/keyboard_backspace.svg');
+    content: url('img/keyboard_backspace.svg');
     width: 24px;
-    height:24px;
+    height: 24px;
     vertical-align: middle;
-    padding-right: 10px;
+    margin-right: 10px;
 }
 
 .author {
